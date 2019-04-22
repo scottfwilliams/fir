@@ -11,6 +11,7 @@
 | `branch track <remote/branch>`         | `branch -u <remote/branch>`          |
 | `branch untrack`                       | `branch --unset-upstream`            |
 | `commit`                               | `commit`                             |
+| `discard`                              | `reset HEAD`           |
 | `follow <branch>`                      | `merge --ff-only <branch>`           |
 | `info <object>`                        | `show <object>`                      |
 | `merge <branch>`                       | `merge --no-ff <branch>`             |
@@ -24,9 +25,9 @@
 | `squash <commit>..<commit>`            | `rebase -i <commit>..<commit>`       |
 | `stage <file[s]>`                      | `add <file[s]>`                      |
 | `switch <branch/tag/commit>`           | `checkout <branch/tag/commit>`       |
-| `synch fetch <remote/branch>`          | `fetch <remote[/branch]>`            |
-| `synch fetch-follow <remote/branch>`   | `pull --ff-only <remote/branch>`     |
-| `synch fetch-merge <remote/branch>`    | `pull --no-ff <remote/branch>`       |
-| `synch push <remote/branch>`           | `push <remote/branch>`               |
+| `sync fetch <remote/branch>`          | `fetch <remote[/branch]>`            |
+| `sync fetch-follow <remote/branch>`   | `pull --ff-only <remote/branch>`     |
+| `sync fetch-merge <remote/branch>`    | `pull --no-ff <remote/branch>`       |
+| `sync push <remote/branch>`           | `push <remote/branch>`               |
 | `uncommit`                             | `reset --hard HEAD~1`                |
 | `unstage <file>`                       | `reset <file>`                       |
