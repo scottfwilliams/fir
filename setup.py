@@ -8,7 +8,7 @@ setup(
     install_requires=["Click"],
     entry_points={
       "console_scripts": [
-          "fir = fir.fir_entry:cli",
+          "fir = fir.entry:cli",
       ]
     }
 )
