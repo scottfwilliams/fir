@@ -19,13 +19,6 @@ from fir.commands.uncommit import uncommit
 from fir.commands.unstage import unstage
 
 
-
-
-
-
-
-
-
 @click.group()
 def cli():
     pass
@@ -38,11 +31,19 @@ def get_env_vars(ctx, args, incomplete):
             yield key
 
 
-@cli.command(help='A command to print environment variables')
-@click.argument("envvar", type=click.STRING, autocompletion=get_env_vars)
-def cmd1(envvar):
-    click.echo('Environment variable: %s' % envvar)
-    click.echo('Value: %s' % os.environ[envvar])
-
-
+cli.add_command(branch)
+cli.add_command(commit)
+cli.add_command(discard)
+cli.add_command(follow)
+cli.add_command(info)
+cli.add_command(merge)
+cli.add_command(remote)
+cli.add_command(replay)
+cli.add_command(repo)
+cli.add_command(squash)
+cli.add_command(stage)
 cli.add_command(stash)
+cli.add_command(switch)
+cli.add_command(sync)
+cli.add_command(uncommit)
+cli.add_command(unstage)

@@ -7,7 +7,6 @@ def stash():
 
 
 @stash.command(name="list", help='Choose a user')
-@click.argument("somearg", type=click.STRING)
-def _list(somearg):
-    pass
-
+@click.argument("user", type=click.STRING)
+def _list(user):
+    click.echo('Chosen user is %s' % user)

@@ -21,8 +21,8 @@ def _list(somearg):
 
 def run():
     parent_dir = dirname(abspath(__file__))
-    project_root_dir = dirname(parent_dir)
-    commands_pkg_dir = join(project_root_dir, "commands")
+    pkg_root_dir = dirname(parent_dir)
+    commands_pkg_dir = join(pkg_root_dir, "commands")
     print("command modules package path:", commands_pkg_dir)
     assert isdir(commands_pkg_dir)
     for cmd in commands:
